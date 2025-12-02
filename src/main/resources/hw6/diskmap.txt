@@ -1,2 +1,0 @@
-moscow:city
-kitty:animal
