@@ -1,0 +1,24 @@
+Points: 100, Threads: 1, Accuracy: 0,144319, MilliSeconds: 0
+Points: 100, Threads: 2, Accuracy: 0,136000, MilliSeconds: 0
+Points: 100, Threads: 4, Accuracy: 0,167363, MilliSeconds: 1
+Points: 100, Threads: 8, Accuracy: 0,147681, MilliSeconds: 1
+Points: 100, Threads: 16, Accuracy: 0,151681, MilliSeconds: 3
+
+Points: 10000, Threads: 1, Accuracy: 0,012761, MilliSeconds: 1
+Points: 10000, Threads: 2, Accuracy: 0,010197, MilliSeconds: 2
+Points: 10000, Threads: 4, Accuracy: 0,015200, MilliSeconds: 1
+Points: 10000, Threads: 8, Accuracy: 0,008194, MilliSeconds: 1
+Points: 10000, Threads: 16, Accuracy: 0,010200, MilliSeconds: 1
+
+Points: 1000000, Threads: 1, Accuracy: 0,001415, MilliSeconds: 12
+Points: 1000000, Threads: 2, Accuracy: 0,001255, MilliSeconds: 7
+Points: 1000000, Threads: 4, Accuracy: 0,001497, MilliSeconds: 4
+Points: 1000000, Threads: 8, Accuracy: 0,001411, MilliSeconds: 4
+Points: 1000000, Threads: 16, Accuracy: 0,000890, MilliSeconds: 5
+
+Points: 10000000, Threads: 1, Accuracy: 0,000433, MilliSeconds: 134
+Points: 10000000, Threads: 2, Accuracy: 0,000399, MilliSeconds: 67
+Points: 10000000, Threads: 4, Accuracy: 0,000527, MilliSeconds: 38
+Points: 10000000, Threads: 8, Accuracy: 0,000452, MilliSeconds: 35
+Points: 10000000, Threads: 16, Accuracy: 0,000326, MilliSeconds: 40
+
