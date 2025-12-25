@@ -1,4 +1,4 @@
-package edu.basics3.Task1;
+package edu.basics3;
 
 public final class Task1 {
     private Task1() {

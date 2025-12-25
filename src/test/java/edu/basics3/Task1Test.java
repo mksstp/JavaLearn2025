@@ -1,4 +1,4 @@
-package edu.basics3.Task1;
+package edu.basics3;
 
 import java.util.Map;
 import org.assertj.core.api.Assertions;
