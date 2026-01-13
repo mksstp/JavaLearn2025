@@ -60,7 +60,8 @@ public class LoggerStatisticsMachine {
 
             userAgentsCount.merge(log.httpsUserAgent(), 1, Integer::sum);
 
-            LocalDate localDate = LocalDate.of(log.localTime().getYear(),
+            LocalDate localDate = LocalDate.of(
+                log.localTime().getYear(),
                 log.localTime().getMonthValue(),
                 log.localTime().getDayOfMonth()
             );
@@ -94,7 +95,8 @@ public class LoggerStatisticsMachine {
         writer.write(dayMonthRequestsStatistics);
     }
 
-    private void renderUserAgentsStatistics(TableRendererInterface tableRenderer, FileWriter writer) throws IOException {
+    private void renderUserAgentsStatistics(TableRendererInterface tableRenderer, FileWriter writer)
+        throws IOException {
         // Rendering user agents
         header = "Http User Agents";
         table = new ArrayList<>();
@@ -106,7 +108,8 @@ public class LoggerStatisticsMachine {
         writer.write(userAgentsStatistics);
     }
 
-    private void renderRequestMethodsStatistics(TableRendererInterface tableRenderer, FileWriter writer) throws IOException {
+    private void renderRequestMethodsStatistics(TableRendererInterface tableRenderer, FileWriter writer)
+        throws IOException {
         header = "Методы запросов";
         table = new ArrayList<>();
         table.add(new Object[] {"Метод запроса", "Количество"});
