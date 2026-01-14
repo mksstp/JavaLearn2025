@@ -39,13 +39,13 @@ public class RWLPersonDatabase implements PersonDatabaseInterface {
     @Override
     public @Nullable List<Person> findByName(String name) {
         List<Person> listByName;
-        readWriteLock.writeLock().lock();
+        readWriteLock.readLock().lock();
         try {
             listByName = personList.stream()
                 .filter(person -> name.equals(person.name()))
                 .toList();
         } finally {
-            readWriteLock.writeLock().unlock();
+            readWriteLock.readLock().unlock();
         }
         return listByName;
     }
@@ -53,13 +53,13 @@ public class RWLPersonDatabase implements PersonDatabaseInterface {
     @Override
     public @Nullable List<Person> findByAddress(String address) {
         List<Person> listByAddress;
-        readWriteLock.writeLock().lock();
+        readWriteLock.readLock().lock();
         try {
             listByAddress = personList.stream()
                 .filter(person -> address.equals(person.address()))
                 .toList();
         } finally {
-            readWriteLock.writeLock().unlock();
+            readWriteLock.readLock().unlock();
         }
         return listByAddress;
     }
@@ -67,13 +67,13 @@ public class RWLPersonDatabase implements PersonDatabaseInterface {
     @Override
     public @Nullable List<Person> findByPhone(String phone) {
         List<Person> listByPhone;
-        readWriteLock.writeLock().lock();
+        readWriteLock.readLock().lock();
         try {
             listByPhone = personList.stream()
                 .filter(person -> phone.equals(person.phoneNumber()))
                 .toList();
         } finally {
-            readWriteLock.writeLock().unlock();
+            readWriteLock.readLock().unlock();
         }
         return listByPhone;
     }
